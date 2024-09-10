@@ -9,16 +9,50 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "axios": "^1.7.7",
+    "formik": "^2.4.6",
+    "framer-motion": "^11.5.4",
+    "next": "14.2.9",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.9"
+    "yup": "^1.4.0",
+    "@tanstack/react-query": "^5.29.0",
+    "@tanstack/react-table": "^8.15.3",
+    "@types/react-combine-reducers": "^1.0.3",
+    "react-combine-reducers": "^1.1.1",
+    "react-datepicker": "^6.9.0",
+    "react-icons": "^5.0.1",
+    "react-select": "^5.8.0",
+    "moment": "^2.30.1",
+    "cookie": "^0.6.0",
+    "cookies": "^0.9.1",
+    "jwt-decode": "^4.0.0",
+    "lodash.get": "^4.4.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@next/eslint-plugin-next": "^14.0.2",
+    "@tanstack/eslint-plugin-query": "^5.28.11",
+    "@types/cookie": "^0.6.0",
+    "@types/lodash.get": "^4.4.9",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-datepicker": "^6.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.9"
+    "eslint-config-next": "14.2.9",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "html5-qrcode": "^2.3.8",
+    "prettier": "3.1.0",
+    "typescript": "^5"
   }
 }
