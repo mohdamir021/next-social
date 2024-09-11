@@ -2,7 +2,11 @@ import { Button, VStack } from "@chakra-ui/react";
 import React from "react";
 import InputField from "../inputs/InputField";
 
-export default function LoginBody() {
+interface LoginBodyProps {
+  onClickLogin: (e?: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+}
+
+export default function LoginBody({ onClickLogin }: Partial<LoginBodyProps>) {
   return (
     <VStack justifyContent={"start"}>
       {/* Username / Email */}
@@ -21,7 +25,7 @@ export default function LoginBody() {
       />
 
       {/* Button */}
-      <Button bgColor={"darkslateblue"} color={"white"} w={"full"}>
+      <Button bgColor={"darkslateblue"} color={"white"} w={"full"} onClick={onClickLogin}>
         Login
       </Button>
     </VStack>

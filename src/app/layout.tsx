@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body>
+    <html lang="en">
+      <body style={{ height: "100vh" }}>
         <Providers>{children}</Providers>
       </body>
     </html>

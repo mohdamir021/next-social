@@ -1,10 +1,15 @@
+"use client";
+
 import LoginBody from "@/components/ui/body/LoginBody";
 import Header from "@/components/ui/texts/Header";
 import { Flex } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
+  const router = useRouter();
+
   return (
-    <Flex w={"full"} h={"100vh"} bgColor={"lightblue"} justifyContent={"end"}>
+    <Flex w={"full"} h={"full"} bgColor={"lightblue"} justifyContent={"end"}>
       <Flex
         w={"50%"}
         bgColor={"whitesmoke"}
@@ -15,7 +20,11 @@ export default function Login() {
         gap={"20px"}
       >
         <Header>Social Media</Header>
-        <LoginBody />
+        <LoginBody
+          onClickLogin={() => {
+            router.push(`/user`);
+          }}
+        />
       </Flex>
     </Flex>
   );
